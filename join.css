@@ -11,11 +11,11 @@
     padding: 30px;
 }
 
-label {
-    float: left;
-    text-align: right;
-    margin-right: 15px;
-    width: 100px;
+form {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 input, textarea {
@@ -29,6 +29,7 @@ input {
 }
 
 input[type=submit]{
-    width: 50px;
-    margin: 0 auto;
+    width: 100px;
+    float: right;
 }
+
