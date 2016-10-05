@@ -1,9 +1,7 @@
 window.onload = function() {
 
-/**
- *
- *  TODO: Fix get the JSON working.
- *  var xmlhttp = new XMLHttpRequest();
+
+    var xmlhttp = new XMLHttpRequest();
     var staff;
     var staffdiv = document.getElementById("staff");
     xmlhttp.onreadystatechange = function() {
@@ -21,7 +19,8 @@ window.onload = function() {
     };
     xmlhttp.open("GET", "staff.json", true);
     xmlhttp.send();
-*/
+
+ /*
     var staff = [
         {
             "sectionName" : "Corporate Officers",
@@ -220,7 +219,7 @@ window.onload = function() {
             staffdiv.innerHTML += "<h4 class=\"name\">" + staff[x].staffList[y].employeeName + "</h4>";
             staffdiv.innerHTML += "<h4 class=\"position\">" + staff[x].staffList[y].employeePosition + "</h4>"
         }
-    }
+    }*/
 };
 
 
