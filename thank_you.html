@@ -3,48 +3,27 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta property="og:url" content="https://artesoscuras.github.io/first_sem_project/staff.html">
-    <meta property="og:title" content="Police Tribune Magazine - Staff Members">
-    <meta property="og:description" content="The many wonderful faces of the Police Tribune Magazine">
+    <meta property="og:url" content="https://artesoscuras.github.io/first_sem_project/index.html">
+    <meta property="og:title" content="Police Tribune Magazine - Home Page">
+    <meta property="og:description" content="The Police Tribune Magazine does ....">
     <meta property="og:image" content="police_tribune.png">
     <meta property="og:type" content="website">
     <meta property="fb:admins" content="897655470366459">
 
-
     <link rel="shortcut icon" href="police_tribune.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/staff.css">
-    <title>Police Tribune Magazine - Staff Members</title>
+    <link rel="stylesheet" href="css/thank_you.css">
+    <title>Police Tribune Magazine</title>
 </head>
 <body>
-
-<!-- Facebook SDK -->
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '897655470366459',
-            xfbml      : true,
-            version    : 'v2.7'
-        });
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-
 <nav>
     <div id="name">
         <img src="police_tribune.png" alt="Police Tribune Logo" id="nav_logo"/>
         <h2>Police Tribune</h2>
     </div>
     <div id="navigation">
-        <a href="index.html">
+        <a href="#" id="current-page">
             <div class="nav-button">Home</div>
         </a>|<a href="about.html">
         <div class="nav-button">About</div>
@@ -52,7 +31,7 @@
         <div class="nav-button">Advocacy</div>
     </a>|<a href="gallery.html">
         <div class="nav-button">Gallery</div>
-    </a>|<a href="#" id="current-page">
+    </a>|<a href="staff.html">
         <div class="nav-button">Staff</div>
     </a>|<a href="join.html">
         <div class="nav-button">Join Us</div>
@@ -60,15 +39,16 @@
     </div>
 </nav>
 
-<div id="rect-container">
-    <h2 class="title">Staff</h2>
-</div>
+<h2>
+    Thank you!
+</h2>
 
+<p>We will contact you soon.</p>
 
 <footer>
     734 N. Padilla St. (Malaca&ntilde;an Complex)<br>
     San Miguel, Manila, Republic of the Philippines
 </footer>
-<script src="staff.js"></script>
+
 </body>
 </html>

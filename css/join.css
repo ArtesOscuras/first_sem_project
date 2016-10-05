@@ -1,0 +1,62 @@
+#contact-box {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 5px 10px black;
+    border: 1px solid black;
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+}
+
+#form-container {
+    height: 500px;
+    width: 299px;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid black;
+}
+
+#contact-info {
+    width: 299px;
+    height: 500px;
+    display: inline;
+    float: right;
+    text-indent: 50px;
+}
+
+.contact {
+    margin: 1px;
+}
+
+.contact:first-child {
+    margin-top: 0.67em;
+}
+
+.donation {
+    margin-bottom: 0;
+}
+
+form {
+    width: 250px;
+    position: absolute;
+}
+
+input, textarea {
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+
+
+input {
+    width: 250px;
+}
+
+input[type=submit]{
+    width: 100px;
+    float: right;
+}
+

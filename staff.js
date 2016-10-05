@@ -42,6 +42,10 @@ window.onload = function() {
                 {
                     "employeeName": "Cherryl Jane Senen",
                     "employeePosition": "Corporate Secretary"
+                },
+                {
+                    "employeeName" : "Kim Farhant S. Palao",
+                    "employeePosition" : "VP For Marketing"
                 }
             ]
         },
