@@ -70,6 +70,37 @@ footer {
     position: fixed;
 }
 
+/* Everything under here will be for the rectangular containers that are present in many pages */
+#rect-container {
+    margin: 30px 0 100px 0;
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.title {
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+p {
+    text-indent: 20px;
+    margin: 10px;
+    text-align: justify;
+}
+@media screen and (max-width: 717px) {
+    #rect-container {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+    }
+}
+
+/* End of rect-container section */
+
 /* {
     border: 1px solid black;
 }

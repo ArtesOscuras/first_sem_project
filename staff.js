@@ -202,7 +202,7 @@ window.onload = function() {
         }
     ];
 
-    var staffdiv = document.getElementById("staff");
+    var staffdiv = document.getElementById("rect-container");
     for (x = 0; x < staff.length; x++) {
         staffdiv.innerHTML += "<h4 class=\"section\">" + staff[x].sectionName + "</h4>";
         for (y = 0; y < staff[x].staffList.length; y++) {
