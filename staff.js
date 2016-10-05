@@ -1,6 +1,6 @@
 window.onload = function() {
 
-
+/** TODO: Get this JSON Working
     var staff= JSON.parse(staff);
     var staffdiv = document.getElementById("staff");
     for (x = 0; x < staff.length; x++) {
@@ -10,8 +10,7 @@ window.onload = function() {
             staffdiv.innerHTML += "<h4 class=\"position\">" + staff[x].staffList[y].employeePosition + "</h4>"
         }
     }
-
- /*
+*/
     var staff = [
         {
             "sectionName" : "Corporate Officers",
@@ -210,7 +209,7 @@ window.onload = function() {
             staffdiv.innerHTML += "<h4 class=\"name\">" + staff[x].staffList[y].employeeName + "</h4>";
             staffdiv.innerHTML += "<h4 class=\"position\">" + staff[x].staffList[y].employeePosition + "</h4>"
         }
-    }*/
+    }
 };
 
 
