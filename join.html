@@ -38,7 +38,7 @@
         </nav>
         <div id="contact-box">
             <div id="form-container">
-                <form action="form-handler.php" method="post" name="contact-form">
+                <form method="post" action="<?php echo htmlspecialchars(form-handler.php)>" name="contact-form">
                     <label for="name-input">Name</label><br>
                     <input type="text" name="name" id="name-input" required><br><br>
                     <label for="email-input">E-mail</label><br>

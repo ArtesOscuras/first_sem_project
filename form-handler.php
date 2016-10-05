@@ -6,6 +6,11 @@
  * Time: 21:47
  */
 
+
+/** TODO: Eliminate 405
+    TODO: Add a form validator
+ */
+
 $send_to = "artesoscuras13@gmail.com";
 
 $name = $_POST["name-input"];
