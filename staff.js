@@ -1,24 +1,15 @@
 window.onload = function() {
 
 
-    var xmlhttp = new XMLHttpRequest();
-    var staff;
+    var staff= JSON.parse(staff);
     var staffdiv = document.getElementById("staff");
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            staff = JSON.parse(this.responseText);
-            for (x = 0; x < staff.length; x++) {
-                staffdiv.innerHTML += "<h4 class=\"section\">" + staff[x].sectionName + "</h4>";
-                for (y = 0; y < staff[x].staffList.length; y++) {
-                    staffdiv.innerHTML += "<h4 class=\"name\">" + staff[x].staffList[y].employeeName + "</h4>";
-                    staffdiv.innerHTML += "<h4 class=\"position\">" + staff[x].staffList[y].employeePosition + "</h4>"
-                }
-            }
-
+    for (x = 0; x < staff.length; x++) {
+        staffdiv.innerHTML += "<h4 class=\"section\">" + staff[x].sectionName + "</h4>";
+        for (y = 0; y < staff[x].staffList.length; y++) {
+            staffdiv.innerHTML += "<h4 class=\"name\">" + staff[x].staffList[y].employeeName + "</h4>";
+            staffdiv.innerHTML += "<h4 class=\"position\">" + staff[x].staffList[y].employeePosition + "</h4>"
         }
-    };
-    xmlhttp.open("GET", "staff.json", true);
-    xmlhttp.send();
+    }
 
  /*
     var staff = [
