@@ -17,3 +17,8 @@ $full_message = "Name: $name \n Email: $sender_email \n\n $message";
 
 mail($send_to, $subject, $full_message);
 header("Location: thank_you.html");
+?>
+<!doctype html>
+<html>
+Processing
+</html>
