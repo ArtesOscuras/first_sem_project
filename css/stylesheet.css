@@ -105,6 +105,51 @@ p {
     background: no-repeat fixed center;
     background-size: cover;
     height: 600px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+#head-image {
+	background-image: url("../images/one.jpg");
+}
+#second-image {
+	background-image: url("../images/two.jpg");
+}
+#third-image {
+	background-image: url("../images/three.jpg");
+}
+#fourth-image {
+	background-image: url("../images/four.jpg");
+}
+
+#head-image  {
+	position: relative;
+}
+
+#foreground-title {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #FFFFFF;
+	text-shadow: 2px 2px 5px black,
+				 5px 5px 10px white,
+				 10px 10px 15px black;
+}
+
+.information {
+	width: 100%;
+    background: rgba(0,0,0,0.8);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 250px;
+	color: white;
+	text-align: center;
+}
+
+.info-paragraph {
+	display: inline-block;
 }
 
 /* {
