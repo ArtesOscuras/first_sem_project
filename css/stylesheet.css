@@ -80,12 +80,10 @@ a {
     /* Para may animation na umiiba yung kulay, hindi lang biglang bumabago */
     transition: color 0.5s, background 0.5s;
     /* -------------------------------------------------------------------- */
-
-}
-
-.nav-button{
     border-right: 1px solid black;
+
 }
+
 
 #navigation a:last-child .nav-button {
     border-right: none;
