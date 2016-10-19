@@ -1,7 +1,16 @@
+html, body {
+    height: 100%;
+}
+
 #contact-box {
+    background: #FFFFFF;
     width: 650px;
     height: 500px;
+
+    /* Para maging round ang edges ng box*/
     border-radius: 5px;
+    /* --------------------------------- */
+
     box-shadow: 0 5px 10px black;
     border: 1px solid black;
     margin-top: 30px;
@@ -13,17 +22,24 @@
 
 #form-container {
     height: 500px;
-    width: 299px;
+    width: 300px;
     display: inline-block;
+
     float: left;
+
     border-right: 1px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #contact-info {
-    width: 299px;
+    width: 300px;
     height: 500px;
     display: inline;
+
     float: right;
+
 }
 
 .contact {
@@ -64,5 +80,5 @@ input[type=submit]{
 
 footer {
     position: absolute;
-    bottom:0;
+    bottom: 0;
 }
