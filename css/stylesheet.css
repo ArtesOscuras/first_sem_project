@@ -33,6 +33,8 @@ nav {
     /* ------------------------------------- */
 
     background: linear-gradient(#FFFFFF, #C0C0C0);
+
+    z-index: 1;
 }
 
 #name h2 {
@@ -71,14 +73,23 @@ a {
     font-size: 20px;
     color: #0099FF;
     padding: 5px;
-
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     /* Para may animation na umiiba yung kulay, hindi lang biglang bumabago */
     transition: color 0.5s, background 0.5s;
     /* -------------------------------------------------------------------- */
 
-
 }
 
+.nav-button{
+    border-right: 1px solid black;
+}
+
+#navigation a:last-child .nav-button {
+    border-right: none;
+}
 .nav-button:hover {
     color: #00FFAA;
     background: #333333;
@@ -148,8 +159,8 @@ p {
 .parallax {
     background: no-repeat fixed center;
     background-size: cover;
-    height: 600px;
-	margin-bottom: 50px;
+    height: 700px;
+	margin-bottom: 10px;
 	position: relative;
 }
 
@@ -181,7 +192,8 @@ p {
     /* --------------------------------------- */
 
 	color: #FFFFFF;
-	text-shadow: 5px 5px 2px black,
+	text-shadow: 0 0 10px black,
+                 5px 5px 0 black,
 				 10px 10px 10px white;
 }
 
@@ -213,6 +225,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 5px outset #333333;
 }
 
 /* {

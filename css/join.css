@@ -78,6 +78,10 @@ input[type=submit]{
     float: right;
 }
 
+input:focus, textarea:focus {
+    outline: #00FFAA auto 20px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
