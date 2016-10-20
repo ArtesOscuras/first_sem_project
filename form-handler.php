@@ -5,7 +5,7 @@
  * Date: 05/10/2016
  * Time: 21:47
  */
-/*
+
 
 $send_to = "artesoscuras13@gmail.com";
 
@@ -26,11 +26,11 @@ try {
     $conn = new PDO("jdbc:sqlserver://policetribune.database.windows.net:1433", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Done";
-/*    $new_id = $conn->prepare("SELECT MAX(id) FROM emails");
+    $new_id = $conn->prepare("SELECT MAX(id) FROM emails");
     $new_id++;
     $stmt = $conn->prepare("INSERT INTO emails VALUES ($new_id, $name, $sender_email, $subject, $message,  )");
     mail($send_to, $subject, $full_message);
-*/
+
 } catch (Exception $e) {
     echo "Failed.";
 }
