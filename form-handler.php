@@ -14,21 +14,22 @@ $sender_email = $_POST["email-input"];
 $subject = $_POST["subject-input"];
 $message = $_POST["message"];
 
-$full_message = "Name: $name \n Email: $sender_email \n\n $message";
+//$full_message = "Name: $name \n Email: $sender_email \n\n $message";
 /*
 mail($send_to, $subject, $full_message);
 */
+
+$server = "policetribune.database.windows.net,1433";
+$database = "police_tribune";
 $username = "PoliceTribuneAdmin@policetribune";
 $password = "1Sp4KP@ITH";
 
 
 try {
-    $conn = new PDO("jdbc:sqlserver://policetribune.database.windows.net:1433", $username, $password);
+    $conn = new PDO("sqlsrv:server:=server;Database=$database", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Done";
-    $new_id = $conn->prepare("SELECT MAX(id) FROM emails");
-    $new_id++;
-    $stmt = $conn->prepare("INSERT INTO emails VALUES ($new_id, $name, $sender_email, $subject, $message,  )");
+    $date_now = mktime();
+    $stmt = $conn->prepare("INSERT INTO emails (sender_name, sender_email, sender_subject, sender_message, sender_date_time) VALUES ( $name, $sender_email, $subject, $message, $date_now )");
     $stmt->execute();
 
 } catch (Exception $e) {
