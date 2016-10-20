@@ -26,7 +26,7 @@ $password = "1Sp4KP@ITH";
 
 
 try {
-    $conn = new PDO("sqlsrv:server:=server;Database=$database", $username, $password);
+    $conn = new PDO("sqlsrv:server:=$server;Database=$database", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $date_now = mktime();
     $stmt = $conn->prepare("INSERT INTO emails (sender_name, sender_email, sender_subject, sender_message, sender_date_time) VALUES ( $name, $sender_email, $subject, $message, $date_now )");
