@@ -37,8 +37,3 @@ try {
 }
 
 header("Location: thank_you.html");
-?>
-<!doctype html>
-<html>
-Processing
-</html>
