@@ -23,8 +23,8 @@ $password = "1Sp4KP@ITH";
 
 
 try {
-/*    $conn = new PDO("jdbc:sqlserver://policetribune.database.windows.net:1433", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);*/
+    $conn = new PDO("jdbc:sqlserver://policetribune.database.windows.net:1433", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Done";
 /*    $new_id = $conn->prepare("SELECT MAX(id) FROM emails");
     $new_id++;
