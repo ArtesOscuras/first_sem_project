@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="338366167">
+    <data-source source="LOCAL" name="SQL Server (Microsoft) - @policetribune.database.windows.net" uuid="83cb766e-cf46-4b1d-a364-d3a682a1b9a9">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://policetribune.database.windows.net;databaseName= jdbc:sqlserver://policetribune.database.windows.net;database=police_tribune</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Azure - Police Tribune" uuid="c7720a30-00e1-4e09-aee1-7e2aa6e50fcd">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://policetribune.database.windows.net:1433</jdbc-url>
+    </data-source>
+  </component>
+</project>
