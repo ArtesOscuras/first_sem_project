@@ -29,6 +29,7 @@ try {
     $new_id = $conn->prepare("SELECT MAX(id) FROM emails");
     $new_id++;
     $stmt = $conn->prepare("INSERT INTO emails VALUES ($new_id, $name, $sender_email, $subject, $message,  )");
+    $stmt->execute();
     mail($send_to, $subject, $full_message);
 
 } catch (Exception $e) {
