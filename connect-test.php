@@ -12,3 +12,9 @@ try {
 } catch (Exception $e) {
     echo "Failed. " . $e->getMessage();
 }
+?>
+<html>
+<body>
+
+</body>
+</html>
